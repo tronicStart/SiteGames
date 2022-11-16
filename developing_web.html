@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Descarga Geometry Dash un juego de aventura saltos y diversió">
+    <meta name="keywords" content="Entretenimiento , Diversion , Nuevos">
+  	<meta name="author" content="Brayan Vallejo">
+    <title>Site Games | Download Concidencias</title>
+    <link rel="stylesheet" href="./css/Estilos2.css">
+    <link rel="icon" href="img/favicon.png">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Site</span> Games</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="current"><a href="services.html">Juegos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+	<div class="contenedor">
+	  <div class="slider-contenedor">
+		<section class="contenido-slider">
+		   <div>
+		     <h2>Bienvenidos a Site Games. </h2>
+		   </div>
+		  <img src="./img/sitegames1.gif" alt="">
+		</section>
+		<section class="contenido-slider">
+		  <div>
+		  <h2>Un sito web con juegos nuevos no esperes mas y descarga.</h2>
+		  </div>
+		  <img src="./img/sitegames2.gif" alt="">
+		</section>
+     <section class="contenido-slider">
+       <div>
+          <h2>Un sito web con juegos nuevos no esperes mas y descarga.</h2>
+       </div>
+		      <img src="./img/sitegames3.gif" alt="">
+     </section>
+	     </div>
+       </div>
+	  <section id="ser">
+      <div>
+        <article>
+          <ul id="services1">
+            <li>
+			        <h1 id="centred">Site Games</h1>
+              <h1 id="centred"><img id="boxx" id="centrate"src="./img/favicon.png"/><span id="tamanoH1">  </span></h1>
+			        <h1 id="centred">About</h1>
+			        <p id="centred" >Somos un equipo pequeño equipo de desarrollo de videojuegos</p><p id="centred">
+			        <h3>Juego mas descargado</h3>
+			        <h1><img id="boxx" id="centrate" src="./img/icon_concidencias_game.png"/><span id="tamanoH1"> </span></h1>
+			        <p><a  href="game-concidencias.html">Concidencias</a></p>
+			     </li>
+			  <h1>Todos Los juegos</h1>
+			  <section id="boxes">
+			    <div class="container">
+			      <div class="box">
+			        <img src="./img/icon_concidencias_game.png">
+			        <h3>Concidencias</h3>
+			        <p>Descripcion del juego mas populares del mes.<p>Descargas: <b id="downloads1"></b></p><br><br><a href="#"><button class="ad" class="nexT">Descargar</button></a></p>
+			      </div>
+			      <div class="box">
+			        <img src="./img/icon_concidencias_game.png">
+			        <h3>No hay juego</h3>
+			        <p>Descripcion del juego mas populares del mes.<p>Descargas: <b id="downloads2"></b></p><br><br><a href="#"><button class="ad">Descargar</button></a></p>
+			      </div>
+			      <div class="box">
+			        <img src="./img/icon_concidencias_game.png">
+			        <h3>No hay juego</h3>
+			        <p>Descripcion del juego mas populares del mes.<p>Descargas: <b id="downloads3"></b></p><br><br><a href="#"><button class="ad">Descargar</button></a> </p>
+			      </div>
+			    </div>
+			  </section>
+			  <h2 id="centred" >Contactos del desarrollador</h2>
+			  <p id="centred">Correo del desarrollador: example@gmail.com<br>
+			  <section>
+	     </section>
+	     <br>
+	     <a href="list-game.html"><button id="next" >Atras</button></a>
+	     </h1>
+       <script src="./js/loop.js"></script> 
+	     <script src="./js/main.js"></script>
+	     <script>
+	       let downloads1 = document.getElementById("downloads1");
+	       let downloads2 = document.getElementById("downloads2");
+	       let downloads3 = document.getElementById("downloads3");
+	       fetch('./js/contador.txt')
+	          .then(res => res.text())
+	          .then(content => {
+	          let lines = content.split(/\n/);
+	          //lines.forEach(line => console.log(line));
+	          if(lines === 1000000){
+	         
+	             downloads1.innerHTML = "1M";
+	         
+	          }
+	          downloads1.innerHTML = lines;
+	          downloads2.innerHTML = lines;
+	          downloads3.innerHTML = lines;
+	       });
+	    </script>
+	<footer>
+      <p>Site Games Copyright © 2022</p>
+  </footer>
+  </html>
