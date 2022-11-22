@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Descarga Geometry Dash un juego de aventura saltos y diversió">
+	<meta name="keywords" content="Entretenimiento , Diversion , Nuevos">
+  	<meta name="author" content="Brayan Vallejo">
+    <title>Site Games | Download Math basic operations</title>
+    <link rel="stylesheet" href="./css/Estilos2.css">
+    <link rel="icon" href="img/favicon.png">
+	  
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Site</span> Games</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="current"><a href="services.html">Juegos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+	<div class="contenedor">
+	  <div class="slider-contenedor">
+		<section class="contenido-slider">
+		  <div>
+
+		  </div>
+		  <img src="./img/concidencias_game/imagen1_concidencias.png" alt="">
+		</section>
+		<section class="contenido-slider">
+		  <div>
+
+		  </div>
+		  <img src="./img/concidencias_game/imagen2_concidencias.png" alt="">
+
+		</section>
+        
+        <section class="contenido-slider">
+		  <div>
+
+		  </div>
+		  <img src="./img/concidencias_game/imagen3_concidencias.png" alt="">
+
+        </section>
+	  </div>
+    </div>
+
+	<section id="ser">
+      <div>
+        <article>
+          <ul id="services1">
+            <li>
+			  <h1 id="centred">Math basic operations</h1>
+			  <h1 id="centred" ><img id="boxx" id="centrate" src="./img/math/ic_launcher.png"/><span id="tamanoH1">  </span></h1>
+
+			  <h1 id="centred">Descripción</h1>
+			  <p id="centred" >
+				
+			  </p>
+			  <p id="centred">
+				<video id="centrate" width="1080" heigh autoplay controls>
+				  <source src="./img/sitegames.mp4" type="video/mp4"/>
+				  Tu navegador no es compatible con el formato mp4
+				</video>
+			  </p>
+			  <p id="centred">
+				Precio del juego: Gratis
+			  </p>
+			  <h2 id="centred" >Contactos del desarrollador</h2>
+			  <center><p><a href="developing_web.html">Site Games Studios</a></p></center>
+			  <p id="centred">
+				Correo del desarrollador: example@gmail.com
+				<br>
+
+			  
+			  <section>
+				<div class="description">
+				  <article>
+					<p id="centred" id="file">
+					  <br>
+					  <h1 id="centred" >Género</h1>
+					  <p id="centred" >Puzzles</p>
+					  <h1 id="centred" >Fecha de lazamiento</h1>
+					  <p id="centred" >00/00/000</p>
+					  <h1 id="centred" >Última actualización recibida</h1>
+					  <p id="centred" >00/00/0000</p>
+					  <h1 id="centred" >Total de descargas</h1>
+					  <center><p id="count_concidencias">0</p></center>
+					  <center><input id="next" id="rest" class="buttons" type="submit" name="" value="Cosas añadidas" onclick="alert('•Dificultades: Facil, Intermedia y Dificil')"></center>
+					  <center><input id="next" id="rest" class="buttons" type="submit" name="" value="Requisitos" onclick="alert('Android: 4+\nSize: 45mb')"></center>
+					</p>
+				  </article>
+				</div>
+			  </section>
+            </li>
+		  </ul>
+		</article>
+	  </div>
+	</section>
+	</p>
+			  <p id="centred" >
+				<a
+				  href="download-concidencias.html" target="_blank"><button id="next" class="nextA" >Descargar</button>
+				</a>
+			  </p>
+	<h1 id="centred">
+	<section id="ser2">
+	  
+	  <div class="container">
+		<h1 id="centred">Cometarios de opinion</h1>
+		<form target="_blank" action="https://formsubmit.co/el/haniki" method="POST">
+		  <div class="form-group">
+			<div class="form-row">
+			  <div class="col">
+				<h1 id="centred">
+				<input type="text" name="name" class="form-control" placeholder="Full Name" required>
+				</h1>
+			  </div>
+			  <div class="col">
+				<h1 id="centred">
+				<input type="email" name="email" class="form-control" placeholder="Email Address" required>
+				</h1>
+			  </div>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<h1 id="centred">
+			<textarea placeholder="Message" class="form-control" name="message" rows="10" required></textarea>
+		    </h1>
+		  </div>
+		  <h1 id="centred">
+		  <button id="next" type="submit" class="btn btn-lg btn-dark btn-block">Enviar</button>
+		  </h1>
+		  <p class="clasificacion">
+			<input id="radio1" type="radio" name="estrellas" value="5">
+		  </p>
+		</form>
+	  </div>
+	</section>
+	 
+	<br>
+	  <a href="list-game.html"><button id="next" >Atras</button></a>
+	</h1>
+    <script src="./js/loop.js"></script> 
+	<script src="./js/main.js"></script>
+	<script>
+	let downloads = document.getElementById("count_concidencias");
+	fetch('./js/contador.txt')
+	  .then(res => res.text())
+	  .then(content => {
+	    let lines = content.split(/\n/);
+	    //lines.forEach(line => console.log(line));
+	    downloads.innerHTML = lines;
+	  });
+	</script>
+	<footer>
+      <p>Site Games Copyright © 2022</p>
+    </footer>
+  </html>
 
