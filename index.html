@@ -104,7 +104,8 @@
 		<div class="box">
 		  <img src="./img/icon_concidencias_game.png" alt="">
 		  <h3>Crosswords</h3>
-		  <p>Obten este juego de palabras o crusigramas si, es el mejor juego de crusigramas con 2186 palabras dividida en tres niveles y en 9 idiomas diferentes<br><br><a href="game-concidencias.html"><button id="next" class="nexT" >Descargar</button></a></p>
+			
+		  <p>Obten este juego de palabras o crusigramas si, es el mejor juego de crusigramas con 2186 palabras dividida en tres niveles y en 9 idiomas diferentes<br><br><p id="counts">0</p><a href="game-concidencias.html"><button id="next" class="nexT" >Descargar</button></a></p>
 		</div>
 		<div class="box">
 		  <img src="./img/mathgame/ic_launcher.png" alt="">
@@ -120,9 +121,19 @@
 	</section>
 	<script src="js/buscador.js"></script>
 	 <script src="js/main.js"></script>
+	  <script>
+	let downloads = document.getElementById("counts");
+	fetch('./js/contador.txt')
+	  .then(res => res.text())
+	  .then(content => {
+	    let lines = content.split(/\n/);
+	    //lines.forEach(line => console.log(line));
+	    downloads.innerHTML = lines;
+	  });
+	</script>
 	<footer>
       <p>Site Games , Copyright &copy; 2022</p>
   </footer>
-	  <div class="disclaimer">Descarga: Math basic operations....free<a title="No-game.html" target="_blank" href="No-game.html" style="color: black;"><b>Descargar</b></a></div>
+	  <div class="disclaimer">Descarga: Math basic operations....free.<a title="No-game.html" target="_blank" href="No-game.html" style="color: black;"><b>Descargar</b></a></div>
 	</body>
 </html>
